@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pearl Flights | Book Your Flight</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Pearl Flight</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Explore</a></li>
+                    <li><a href="#">Book</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Privilege Club</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">EN</a></li>
+                    <li><a href="#">Log in | Sign up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="journey">
+            <div class="main-journey">
+                <h2>Plan your journey</h2>
+                <p>Discover the world with Uganda's warmth</p>
+            </div>
+
+            <div class="booking-form">
+                <form action="#" method="get">
+                    <div class="trip-type">
+                        <label><input type="radio" name="trip" value="roundtrip" checked> Round trip</label>
+                        <label><input type="radio" name="trip" value="oneway"> One way</label>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="from">From</label>
+                            <input type="text" id="from" placeholder="City or airport" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="to">To</label>
+                            <input type="text" id="to" placeholder="City or airport" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="depart">Departure</label>
+                            <input type="date" id="depart" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="return">Return</label>
+                            <input type="date" id="return">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="passengers">Passengers</label>
+                            <select id="passengers">
+                                <option>1 Adult</option>
+                                <option>2 Adults</option>
+                                <option>2 Adults, 1 Child</option>
+                                <option>3 Adults</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="class">Cabin class</label>
+                            <select id="class">
+                                <option>Economy</option>
+                                <option>Premium Economy</option>
+                                <option>Business</option>
+                                <option>First Class</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-search">Search flights</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="quick-links">
+            <div class="container">
+                <h3>Plan your trip</h3>
+                <div class="links-grid">
+                    <a href="hotels.html">Hotels</a>
+                    <a href="car-rentals.html">Car rentals</a>
+                    <a href="#">Meet and assist</a>
+                    <a href="#">Travel insurance</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Travel information</h4>
+                    <ul>
+                        <li><a href="travel-requirements.html">Travel requirements</a></li>
+                        <li><a href="#">Our fleet</a></li>
+                        <li><a href="#">Our partners</a></li>
+                        <li><a href="#">oneworld</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Groups and business travel</h4>
+                    <ul>
+                        <li><a href="#">Beyond Business</a></li>
+                        <li><a href="#">Meetings and events</a></li>
+                        <li><a href="#">Corporate travel</a></li>
+                        <li><a href="#">Group travel</a></li>
+                        <li><a href="#">Sports travel</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Find great fares</h4>
+                    <a href="#" class="explore-offers">Explore offers →</a>
+                    <p class="newsletter">Stay in the know. Receive our offers.</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Fly Uganda. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
