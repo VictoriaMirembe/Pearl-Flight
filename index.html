@@ -3,269 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pearl Flight | Simplify Your Air Travel</title>
-    <meta name="description" content="Pearl Flight is an innovative travel platform combining flight booking, live updates, and personalized recommendations into a single, seamless experience.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Pearl Flight | Live Updates</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&family=Plus+Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     
     <nav class="navbar">
-        <div class="nav-container container">
-            <a href="#" class="logo">
-                <img src="logo.png" alt="Pearl Flight Logo" class="logo-img">
-            </a>
-            <ul class="nav-links">
-                <li><a href="book.html">Book</a></li>
-                <li><a href="manage.html">Manage Trip</a></li>
-                <li><a href="checkin.html">Check-in</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="#updates">Live Updates <span class="badge pulse">New</span></a></li>
-            </ul>
-            <div class="nav-actions">
-                <button class="btn btn-text">Log in</button>
-                <button class="btn btn-primary">Sign up</button>
-            </div>
-            <div class="menu-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
+    <div class="nav-top">
+        <a href="#" class="logo">
+            <img href="index.html" src="logo.png" alt="Pearl Flight Logo" class="logo-img">
+        </a>
+        <ul class="nav-pages">
+            <li><a href="booking.html">Book</a></li>
+            <li><a href="manage.html">Manage Trip</a></li>
+            <li><a href="checkin.html">Check-in</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="#updates">Live Updates <span class="badge pulse">New</span></a></li>
+        </ul>
+        <div class="nav-buttons container">
+            <button class="btn btn-text">Log in</button>
+            <button class="btn btn-primary">Sign up</button>
         </div>
-    </nav>
+        </div>
+</nav>
 
-    <header class="hero">
-        
-        <div class="hero-bg-image"></div>
-        <div class="hero-gradient-overlay"></div>
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        
-        <div class="hero-content container">
-            <div class="hero-text">
-                <h1>Seamless travel,<br>simplified for you.</h1>
-                <p>Centralize your flight bookings, get live updates on the go, and discover personalized recommendations—all in one place.</p>
-            </div>
-
-            
-            <div class="search-widget glass">
-                <div class="widget-tabs">
-                    <button class="tab active" data-tab="flights"><i class='bx bx-paper-plane'></i> Flights</button>
-                    <button class="tab" data-tab="status"><i class='bx bx-radar'></i> Flight Status</button>
+    <header class="top-head">
+        <div class="container top-head-grid">
+            <div class="top-head-text">
+                <span class="top-head-tag">Real-Time Intelligence</span>
+                <h1>Stay Ahead of <br><span class="text-red">The Clouds.</span></h1>
+                <p>Track your flights, monitor gate changes, and receive instant weather alerts for your destination in one centralized dashboard.</p>
+                <div class="top-head-btns">
+                    <button class="btn btn-primary btn-lg">Track Flight</button>
                 </div>
-                
-                <form class="flight-search-form" id="flightSearchForm">
-                    <div class="form-row">
-                        <div class="input-group">
-                            <label><i class='bx bx-map-pin'></i> From</label>
-                            <input type="text" placeholder="Where from?" class="glass-input">
-                        </div>
-                        
-                        <div class="swap-btn">
-                            <i class='bx bx-transfer-alt'></i>
-                        </div>
-
-                        <div class="input-group">
-                            <label><i class='bx bx-map'></i> To</label>
-                            <input type="text" placeholder="Where to?" class="glass-input">
-                        </div>
+            </div>
+            <div class="top head-visual">
+                <div class="status-preview-card">
+                    <div class="card-header">
+                        <span>Current Flight: PF-204</span>
+                        <span class="status-tag">On Time</span>
                     </div>
-
-                    <div class="form-row">
-                        <div class="input-group">
-                            <label><i class='bx bx-calendar'></i> Departure</label>
-                            <input type="date" class="glass-input">
-                        </div>
-                        <div class="input-group">
-                            <label><i class='bx bx-calendar-check'></i> Return</label>
-                            <input type="date" class="glass-input">
-                        </div>
-                        <div class="input-group">
-                            <label><i class='bx bx-user'></i> Travelers</label>
-                            <select class="glass-input">
-                                <option>1 Adult, Economy</option>
-                                <option>2 Adults, Economy</option>
-                                <option>1 Adult, Business</option>
-                            </select>
-                        </div>
+                    <div class="flight-path">
+                        <strong>EBB</strong> <i class='bx bxs-plane-take-off'></i> <strong>DXB</strong>
                     </div>
-
-                    <button type="submit" class="btn btn-primary btn-large search-btn">
-                        Search Flights <i class='bx bx-right-arrow-alt'></i>
-                    </button>
-                </form>
+                </div>
             </div>
         </div>
     </header>
 
-    
-    <section class="features section container" id="discover">
-        <div class="section-title text-center">
-            <h2>Why choose Pearl Flight?</h2>
-            <p>Experience an innovative travel platform engineered for accuracy, efficiency, and comfort.</p>
+    <section id="updates" class="updates-section container">
+        <div class="section-header">
+            <h2>Live Flight Status</h2>
+            <p>Real-time data for all Pearl Flight departures and arrivals.</p>
         </div>
 
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="icon-wrapper">
-                    <i class='bx bx-rocket'></i>
-                </div>
-                <h3>Centralized Booking</h3>
-                <p>Compare prices across multiple airlines and book seamlessly without ever leaving the platform.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="icon-wrapper blue">
-                    <i class='bx bx-bell-ring'></i>
-                </div>
-                <h3>Real-time Updates</h3>
-                <p>Stay informed with instant push notifications for delays, cancellations, and gate changes.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="icon-wrapper purple">
-                    <i class='bx bx-sparkles'></i>
-                </div>
-                <h3>Personalized Recommendations</h3>
-                <p>Discover tailored destinations and optimal routes based on your travel history and preferences.</p>
-            </div>
-        </div>
-    </section>
-
-    
-    <section class="live-tracking section container" id="updates">
-        <div class="combo-layout">
-            <div class="combo-text">
-                <span class="tag">Live Sync ✨</span>
-                <h2>Never miss a beat <br>with live tracking.</h2>
-                <p>We eliminate the stress of travel by keeping you informed. The moment an airline updates their status, your dashboard updates. It's that simple.</p>
-                <ul class="check-list">
-                    <li><i class='bx bx-check-circle'></i> Accurate delay tracking</li>
-                    <li><i class='bx bx-check-circle'></i> Instant gate change alerts</li>
-                    <li><i class='bx bx-check-circle'></i> Automated rebooking suggestions</li>
-                </ul>
-                <button class="btn btn-outline mt-2">Explore Features</button>
-            </div>
-            <div class="combo-visual">
-                
-                <div class="mockup-container">
-                    
-                    <div class="live-card">
-                        <div class="card-header">
-                            <span class="flight-no">PF-402</span>
-                            <span class="status delayed">Delayed</span>
-                        </div>
-                        <div class="card-body">
-                            <div class="route">
-                                <strong>JFK</strong>
-                                <span class="line"></span>
-                                <strong>LHR</strong>
-                            </div>
-                            <div class="times">
-                                <div>
-                                    <small>Departs</small>
-                                    <p class="strike">10:00 PM</p>
-                                    <p class="new-time">11:30 PM</p>
-                                </div>
-                                <div class="text-right">
-                                    <small>Gate</small>
-                                    <p>B4 <i class='bx bx-right-arrow-alt'></i> <span class="highlight">C12</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="live-card glass-secondary">
-                        <div class="card-header">
-                            <span class="flight-no">PF-891</span>
-                            <span class="status on-time">On Time</span>
-                        </div>
-                        <div class="card-body">
-                            <div class="route">
-                                <strong>DXB</strong>
-                                <span class="line"></span>
-                                <strong>SYD</strong>
-                            </div>
-                            <div class="times">
-                                <div>
-                                    <small>Departs</small>
-                                    <p>08:15 AM</p>
-                                </div>
-                                <div class="text-right">
-                                    <small>Gate</small>
-                                    <p>A1</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="updates-container">
+            <div class="table-wrapper">
+                <table class="status-table">
+                    <thead>
+                        <tr>
+                            <th>Flight</th>
+                            <th>Destination</th>
+                            <th>Departure</th>
+                            <th>Status</th>
+                            <th>Gate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>PF 102</strong></td>
+                            <td>Nairobi (NBO)</td>
+                            <td>08:30 AM</td>
+                            <td><span class="status boarding">Boarding</span></td>
+                            <td>Gate 4</td>
+                        </tr>
+                        <tr>
+                            <td><strong>PF 204</strong></td>
+                            <td>Dubai (DXB)</td>
+                            <td>10:15 AM</td>
+                            <td><span class="status ontime">On Time</span></td>
+                            <td>Gate 12</td>
+                        </tr>
+                        <tr>
+                            <td><strong>PF 088</strong></td>
+                            <td>London (LHR)</td>
+                            <td>11:45 AM</td>
+                            <td><span class="status delayed">Delayed</span></td>
+                            <td>Gate 2</td>
+                        </tr>
+                        <tr>
+                            <td><strong>PF 312</strong></td>
+                            <td>Kigali (KGL)</td>
+                            <td>01:20 PM</td>
+                            <td><span class="status ontime">On Time</span></td>
+                            <td>Gate 7</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
 
-    
-    <section class="cta section">
-        <div class="container cta-container">
-            <h2>Ready for a smoother journey?</h2>
-            <p>Join thousands of travelers who rely on Pearl Flight for a stress-free experience from planning to arrival.</p>
-            <div class="cta-actions">
-                <button class="btn btn-white btn-large">Start Booking</button>
-                <button class="btn btn-primary-dark btn-large">Download App</button>
+    <section class="insights-section container">
+        <div class="insights-grid">
+            <div class="insight-card weather-card">
+                <div class="card-label">Next Destination: Dubai</div>
+                <div class="weather-main">
+                    <i class='bx bx-sun'></i>
+                    <span class="temp">32°C</span>
+                </div>
+                <p>Clear skies and sunny. Perfect for a desert safari.</p>
+                <div class="weather-forecast">
+                    <span>Fri: 33°C</span>
+                    <span>Sat: 31°C</span>
+                    <span>Sun: 34°C</span>
+                </div>
+            </div>
+
+            <div class="insight-card loyalty-card">
+                <h3>Earn 2x Miles</h3>
+                <p>Book your next trip to <strong>Nairobi</strong> by April 15th and double your Pearl Points.</p>
+                <div class="loyalty-progress">
+                    <div class="progress-bar"><div class="fill" style="width: 65%;"></div></div>
+                    <span>6,500 / 10,000 miles to Gold Status</span>
+                </div>
+                <button class="btn btn-outline">View Rewards</button>
+            </div>
+
+            <div class="insight-card tip-card">
+                <div class="card-icon"><i class='bx bxs-bulb'></i></div>
+                <h4>Traveler Tip</h4>
+                <p>Gate 12 at DXB is currently seeing lower traffic. We recommend using the Smart Tunnel for 15-second immigration clearance.</p>
+                <a href="#" class="link-text">Read more tips <i class='bx bx-right-arrow-alt'></i></a>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container footer-content">
-            <div class="footer-brand">
-                <a href="#" class="logo">
-                    <img src="logo.png" alt="Pearl Flight Logo" class="logo-img">
-                </a>
-                <p>Empowering travelers to make confident decisions and save time with a connected travel experience.</p>
-                <div class="socials">
-                    <a href="#"><i class='bx bxl-twitter'></i></a>
-                    <a href="#"><i class='bx bxl-instagram'></i></a>
-                    <a href="#"><i class='bx bxl-linkedin'></i></a>
-                </div>
+            <p>&copy; We are Pearl Flight Uganda</p>
+            <div class="social-links">
+                <i class='bx bxl-facebook-circle'></i>
+                <i class='bx bxl-twitter'></i>
+                <i class='bx bxl-instagram'></i>
             </div>
-            <div class="footer-links">
-                <div class="link-group">
-                    <h4>Platform</h4>
-                    <ul>
-                        <li><a href="#">Flight Search</a></li>
-                        <li><a href="#">Live Tracking</a></li>
-                        <li><a href="#">Destinations</a></li>
-                        <li><a href="#">Partner Airlines</a></li>
-                    </ul>
-                </div>
-                <div class="link-group">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="link-group">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Cookie Policy</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom container">
-            <p>&copy; 2026 Pearl Flight. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Notification Toaster -->
-    <div id="toast-container"></div>
-
-    <script src="script.js"></script>
 </body>
 </html>
