@@ -12,9 +12,10 @@
 
 
 .sidebar {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+    width: 250px;
+    background: #E3000F;
+    color: white;
+    padding: 20px;
 }
 
 .sidebar .logo {
