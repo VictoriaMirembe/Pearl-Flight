@@ -16,7 +16,7 @@
   --shadow: 0 16px 30px rgba(26, 23, 32, 0.15);
 }
 
-html, body {var
+html, body {
   height: 100%;
   font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   color: var(--text);
@@ -38,12 +38,12 @@ body {
   align-items: center;
 }
 
-/* Left hero text */
-.hero {
+/* Left intro text */
+.intro {
   padding: 2rem;
 }
 
-.hero .badge {
+.intro .badge {
   display: inline-block;
   background: #ffea9a;
   color: #5d4719;
@@ -55,7 +55,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-.hero .subtitle {
+.intro .subtitle {
   display: block;
   color: #444049;
   margin-top: 0.8rem;
@@ -65,7 +65,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-.hero .title {
+.intro .title {
   font-size: clamp(2rem, 4vw, 4rem);
   line-height: 1.05;
   font-weight: 800;
@@ -73,14 +73,14 @@ body {
   color: #1f1a26;
 }
 
-.hero .title .highlight {
+.intro .title .highlight {
   color: var(--primary);
   display: inline-block;
   margin-left: 0.2rem;
   font-size: clamp(2.2rem, 4vw, 4rem);
 }
 
-.hero .description {
+.intro .description {
   margin-top: 1.2rem;
   color: var(--muted);
   max-width: 470px;
